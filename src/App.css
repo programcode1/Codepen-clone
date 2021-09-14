@@ -1,15 +1,19 @@
-
-
+body{
+  overflow:hidden;
+  box-sizing: border-box;
+}
 .editor{
   flex-grow: 1;
   flex-basis: 0;
-  height:100%;
   padding: .5rem;
 }
 .pane-top{
   display: flex;
   background-color:hsl(255, 2%, 7%);
-
+  min-height: 30vh;
+  max-height:95vh;
+  overflow:hidden;
+  resize:vertical;
 }
 
 .editor-title{
@@ -17,13 +21,19 @@
   justify-content: space-between;
 }
 
-
+.CodeMirror{
+  height:95vh !important;
+}
 
 .code-mirror-wrapper{
   flex-grow: 1;
+  flex-basis: 0;
   border-bottom-left-radius:.3rem;
   border-bottom-right-radius:.3rem;
-  overflow: hidden;
+  
+  
+  
+  
 }
 
 h3{
@@ -37,7 +47,16 @@ h3{
 
 
 }
+.pane-output{
+  border-top: 15px solid black;
+  cursor: row-resize;
+  width: 100%;
+  height:100vh;
+  
+}
 iframe{
   border: none;
+  width:100%;
+  height:100%;
 }
 

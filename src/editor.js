@@ -4,6 +4,7 @@ import 'codemirror/mode/xml/xml';
 import 'codemirror/mode/css/css'
 import 'codemirror/mode/javascript/javascript'
 import {Controlled as Controllededitor} from 'react-codemirror2'
+
 function Editor(props){
 	const{
 		name,
@@ -21,8 +22,8 @@ function Editor(props){
 				<h3>{name}</h3>
 				
 			</div>
-			<div>
-				<Controllededitor
+			
+			<Controllededitor
 					onBeforeChange = {handlechange}
 					value={value}
 					className={'code-mirror-wrapper'}
@@ -34,8 +35,8 @@ function Editor(props){
 						lineNumbers:true
 					}}	
 					
-				/>
-			</div>
+			/>
+			
 		</div>
 
 		)

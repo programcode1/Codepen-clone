@@ -29,13 +29,12 @@ function App() {
               <Editor name='CSS' language='css' value={css} onChange={setCss}/>
               <Editor name='JS' language='javascript' value={js} onChange={setJs}/>
       </div>
-      <div className='resizeable'>
+      <div className='pane-output'>
           <iframe
             srcDoc = {srcDoc}
             title='output'
             sandbox='allow-scripts'
-            width="100%"
-            height="100%" 
+           
           />
       </div>
 
