@@ -11,6 +11,7 @@ body{
   display: flex;
   background-color:hsl(255, 2%, 7%);
   min-height: 30vh;
+  height: 50vh;
   max-height:95vh;
   overflow:hidden;
   resize:vertical;
@@ -23,6 +24,7 @@ body{
 
 .CodeMirror{
   height:95vh !important;
+  
 }
 
 .code-mirror-wrapper{
