@@ -1,4 +1,4 @@
-Project live watch..
+Project live watch: \
 [try it](https://pencode.netlify.app)
 # Getting Started with Create React App
 
